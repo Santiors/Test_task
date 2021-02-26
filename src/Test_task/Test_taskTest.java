@@ -9,7 +9,7 @@ public class Test_taskTest {
     public void lineDivide(){
         System.out.println("==================================");
     }
-    //Test - method with valid data = if OK => appear return the longest substring
+    //Test - method with valid data = if OK => return the longest substring
     // that appears at both the beginning and end of the string without overlapping
     @Test
     public void sameEndsTestValid(){
