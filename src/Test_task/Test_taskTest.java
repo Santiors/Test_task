@@ -34,7 +34,7 @@ public class Test_taskTest {
         Assert.assertEquals(" ", Test_task.sameEnds(str6));
     }
 
-    //Test - method with invalid data = if OK => no results
+    //Test - method with invalid data = if OK => empty string (no results)
     @Test
     public void sameEndsTestInvalid(){
         String str1 = "";
