@@ -17,11 +17,13 @@ public class Test_taskTest {
         String str3 = "xxx";
         String str4 = "1235123";
         String str5 = "./asdsa.";
+        String str6 = " asd ";
         System.out.println(Test_task.sameEnds(str1));
         System.out.println(Test_task.sameEnds(str2));
         System.out.println(Test_task.sameEnds(str3));
         System.out.println(Test_task.sameEnds(str4));
         System.out.println(Test_task.sameEnds(str5));
+        System.out.println(Test_task.sameEnds(str6));
     }
 
     //Test - method with invalid data = if OK => no results
@@ -31,9 +33,13 @@ public class Test_taskTest {
         String str2 = " ";
         String str3 = "1234567890";
         String str4 = "qwerty";
+        String str5 = " qwerty";
+        String str6 = "qwerty ";
         System.out.println(Test_task.sameEnds(str1));
         System.out.println(Test_task.sameEnds(str2));
         System.out.println(Test_task.sameEnds(str3));
         System.out.println(Test_task.sameEnds(str4));
+        System.out.println(Test_task.sameEnds(str5));
+        System.out.println(Test_task.sameEnds(str6));
     }
 }
