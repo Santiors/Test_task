@@ -1,5 +1,6 @@
 package Test_task;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,6 +13,7 @@ public class Test_taskTest {
     // that appears at both the beginning and end of the string without overlapping
     @Test
     public void sameEndsTestValid(){
+
         String str1 = "abXYab";
         String str2 = "xx";
         String str3 = "xxx";
@@ -19,11 +21,17 @@ public class Test_taskTest {
         String str5 = "./asdsa.";
         String str6 = " asd ";
         System.out.println(Test_task.sameEnds(str1));
+        Assert.assertEquals("ab", Test_task.sameEnds(str1));
         System.out.println(Test_task.sameEnds(str2));
+        Assert.assertEquals("x", Test_task.sameEnds(str2));
         System.out.println(Test_task.sameEnds(str3));
+        Assert.assertEquals("x", Test_task.sameEnds(str3));
         System.out.println(Test_task.sameEnds(str4));
+        Assert.assertEquals("123", Test_task.sameEnds(str4));
         System.out.println(Test_task.sameEnds(str5));
+        Assert.assertEquals(".", Test_task.sameEnds(str5));
         System.out.println(Test_task.sameEnds(str6));
+        Assert.assertEquals(" ", Test_task.sameEnds(str6));
     }
 
     //Test - method with invalid data = if OK => no results
@@ -36,10 +44,16 @@ public class Test_taskTest {
         String str5 = " qwerty";
         String str6 = "qwerty ";
         System.out.println(Test_task.sameEnds(str1));
+        Assert.assertEquals("", Test_task.sameEnds(str1));
         System.out.println(Test_task.sameEnds(str2));
+        Assert.assertEquals("", Test_task.sameEnds(str2));
         System.out.println(Test_task.sameEnds(str3));
+        Assert.assertEquals("", Test_task.sameEnds(str3));
         System.out.println(Test_task.sameEnds(str4));
+        Assert.assertEquals("", Test_task.sameEnds(str4));
         System.out.println(Test_task.sameEnds(str5));
+        Assert.assertEquals("", Test_task.sameEnds(str5));
         System.out.println(Test_task.sameEnds(str6));
+        Assert.assertEquals("", Test_task.sameEnds(str6));
     }
 }
